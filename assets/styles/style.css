@@ -1,0 +1,10 @@
+.gameForm {
+  border: 1px solid lightgrey;
+  /* background-color: black; */
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.cm-form-group-fix{
+  padding-top: 10px;
+}

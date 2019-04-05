@@ -12,12 +12,27 @@
 </head>
 
 <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Triva Game!<span style="float: right" id="timer">-</span></h1>
+      <p class="lead">The game as already begun!</p>
+      <hr class="my-4">
+      <p>Stop reading and answer all the questions before the time runs out.</p>
+    </div>
 
-  <h1>Game Stuff</h1>
-  <div id="timer"></div>
-  <form id="quiz"></form>
+    <div class="container">
+      <div class="row gameForm">
+        <div class="col text-center">
+            <form id="quiz"></form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+            <button id="submit" class="btn btn-primary my-3" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+  <!-- <div id="timer"></div> -->
   <!-- <button id="submit" type="button" data-toggle="modal" data-target="#myModal">Submit</button> -->
-  <button id="submit" type="button">Submit</button>
 
 
 

@@ -1,4 +1,4 @@
-let time = 5;
+let time = 30;
 let correct = 0;
 let incorrect = 0;
 let timerInterval;
@@ -6,21 +6,27 @@ $correct = $("#correct");
 $incorrect = $("#incorrect");
 
 let questions = [{
-    question: 'Question 1',
-    answer: 'Answer 1',
-    choices: ['Answer 1', "Answer 2", "Answer 3"],
+    question: 'Who lives in a pineapple under the sea?',
+    answer: 'Spongebob',
+    choices: ["Mr. Krabs", "Spongebob", "Patrick"],
     userAnswer: ""
   },
   {
-    question: 'Question 2',
-    answer: 'Answer 2',
-    choices: ['Answer 1', "Answer 2", "Answer 3"],
+    question: 'What does Mr. Krabs smell?',
+    answer: 'Something smelly',
+    choices: ["Bubblebass", "Garbage", "Something smelly"],
     userAnswer: ""
   },
   {
-    question: 'Question 3',
-    answer: 'Answer 3',
-    choices: ['Answer 1', "Answer 2", "Answer 3"],
+    question: 'What is Patrick\'s last name?',
+    answer: 'Star',
+    choices: ["Star", "Starfish", "Square"],
+    userAnswer: ""
+  },
+  {
+    question: 'Who is Spongebob\'s best friend?',
+    answer: 'Patrick',
+    choices: ["Gary", "Patrick", "Squidward"],
     userAnswer: ""
   }
 ];
@@ -33,7 +39,7 @@ function renderQuestions() {
 
   questions.forEach(function (question, index) {
 
-    let $question = $("<div>").addClass("form-group");
+    let $question = $("<div>").addClass("form-group cm-form-group-fix");
     let $label = $("<h4>")
       .text(question.question)
       .appendTo($question);
@@ -106,8 +112,6 @@ function decrement() {
     $('#myModal').modal('show');
   };
 }
-
-
 
 countDown();
 
